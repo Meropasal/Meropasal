@@ -114,25 +114,6 @@
 </style>
 
 <style>
-#showMoreBtn {
-  display: block;
-  margin: 15px auto;
-  padding: 12px 30px;
-  font-size: 18px;
-  font-weight: 600;
-  color: white;
-  background: linear-gradient(45deg, #ff6b6b, #f06595);
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(240, 101, 149, 0.6);
-  transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.2s ease;
-}
-
-#showMoreBtn:hover {
-  background-color: #e55300;
-  transform: scale(1.05);
-}
   .daraz-grid {
     display: grid;
     gap: 10px;
