@@ -110,7 +110,10 @@
   .daraz-rating, .daraz-price {
     font-size: 12px;
   }
-  
+}
+</style>
+
+<style>
 #showMoreBtn {
   display: block;
   margin: 15px auto;
