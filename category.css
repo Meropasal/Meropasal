@@ -1,0 +1,77 @@
+<style>
+  /* Wrapper for the entire section */
+  .categories-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+   padding-left: 2px;
+    background: transparent;
+  }
+
+  /* Categories container with horizontal scrolling */
+  .categories-container {
+    display: flex;
+    gap: 9px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    white-space: nowrap; /* Prevent wrapping of the cards */
+    padding: 10px 0;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+  }
+
+  /* Hide scrollbar on all browsers */
+  .categories-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+  }
+
+  .categories-container {
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+
+  /* Category card */
+  .category-card {
+    flex: 0 0 auto; /* Prevent resizing and allow horizontal scrolling */
+    text-align: center;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative; /* For text positioning */
+    width: 91px; /* Adjust size for better readability */
+    height: 90px;
+    background: linear-gradient(299deg, #163e61, #00f2fe);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .category-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Category name inside the card */
+  .category-card .category-text {
+    font-size: 8.3px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: absolute; /* Center text inside the image */
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    white-space: normal; /* Enable text wrapping */
+    line-height: 1.2;
+    word-wrap: break-word;
+    padding: 0px;
+  }
+
+  /* Category image */
+  .category-card img {
+    max-width: 100%;
+    height: 70%;
+    object-fit: cover; /* Ensure image covers the card */
+    opacity: 0.8; /* Slight transparency for better text visibility */
+    z-index: 1;
+  }
+</style>
