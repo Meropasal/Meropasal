@@ -27,14 +27,14 @@
 /* Reduce font size on mobile devices */
 @media (max-width: 600px) {
   .section-title {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
     .section-title::before {
       content: "🛒";
-      margin-right: 10px;
-      font-size: 24px;
+      margin-right: 5px;
+      font-size: 20px;
     }
 
     .view-all {
