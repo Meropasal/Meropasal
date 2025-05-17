@@ -1,0 +1,72 @@
+<style type="text/css">
+    #hbz-searchbox {
+        background-color: #F5F5F5;
+        border: 1px solid #EDEDED;
+        padding: 1px;
+        border-radius: 10px;
+        margin: 2px auto;
+        max-width: 100%;
+        position: relative; /* For suggestion box positioning */
+    }
+
+    #hbz-input {
+        background-color: antiquewhite;
+        border: none;
+        font: 12px/12px "HelveticaNeue", Helvetica, Arial, sans-serif;
+        margin-right: 2%;
+        font-weight: 500;
+        padding: 4px;
+        box-shadow: 2px 1px 4px #999999 inset;
+        border-radius: 5px;
+        width: 66.33%;
+        height: 30px;
+    }
+
+    #hbz-input:focus {
+        outline: none;
+        box-shadow: 1px 1px 4px #0D76BE inset;
+    }
+
+    #hbz-submit {
+        background: transparent linear-gradient(to bottom, #ff3300 0%, #ff3300 100%) repeat;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font: 13px/13px "HelveticaNeue", Helvetica, Arial, sans-serif;
+        color: white;
+        font-weight: 500;
+        padding: 2px;
+        width: 28%;
+        height: 35px;
+    }
+
+    #hbz-submit:hover {
+        background: transparent linear-gradient(to bottom, #2691DC 0%, #34ADEC 100%) repeat;
+    }
+
+    #hbz-input::placeholder {
+        color: white;
+    }
+
+    /* Suggestions box styling */
+    #suggestions {
+        position: absolute;
+        background-color: #333;
+        color: white;
+        border: 1px solid #444;
+        width: 66.33%; /* Matches input width */
+        max-height: 150px;
+        overflow-y: auto;
+        display: none; /* Initially hidden */
+        z-index: 10;
+    }
+
+    #suggestions div {
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    #suggestions div:hover {
+        background-color: #444;
+    }
+</style>
