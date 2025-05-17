@@ -1,4 +1,3 @@
-  <script>
     const modal = document.querySelector(&quot;.modal&quot;);
 const modalOverlay = document.querySelector(&quot;.modal-overlay&quot;);
 const closeBtn = document.querySelector(&quot;.modal .close-btn&quot;);
@@ -31,4 +30,3 @@ discountBtn.addEventListener(&quot;click&quot;, () =&gt; {
   modal.classList.remove(&quot;active&quot;);
   modalOverlay.classList.remove(&quot;active&quot;);
 });
-  </script>
