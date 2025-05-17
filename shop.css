@@ -119,7 +119,7 @@
 
     .item-rating {
       color: orange;
-      font-size: 13px;
+      font-size: 15px;
     }
 
     .item-price {
@@ -159,7 +159,7 @@
       }
 
       .item-rating, .item-price {
-        font-size: 12px;
+        font-size: 11px;
       }
     }
   </style>
