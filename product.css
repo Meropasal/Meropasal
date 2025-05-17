@@ -5,7 +5,7 @@
       padding: 0;
       box-sizing: border-box;
     }
-    .productsection-bar {
+    .section-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -17,14 +17,14 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     }
 
-    .product-title {
+    .section-title {
       font-size: 22px;
       font-weight: bold;
       display: flex;
       align-items: center;
     }
 
-    .product-title::before {
+    .section-title::before {
       content: "🛒";
       margin-right: 10px;
       font-size: 24px;
@@ -70,7 +70,7 @@
   }
 }
 
-.product-item {
+.daraz-item {
   position: relative;
   border: 1px solid #eee;
   border-radius: 8px;
@@ -81,12 +81,12 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.product-item:hover {
+.daraz-item:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
-.product-item img {
+.daraz-item img {
   width: 100%;
   height: auto;
   border-radius: 6px;
