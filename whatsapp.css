@@ -1,0 +1,117 @@
+/* Style for WhatsApp floating button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 50px;
+    left: 20px;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+.whatsapp-float img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Chatbox container */
+.chatbox {
+    position: fixed;
+    bottom: 110px;
+    left: 20px;
+    width: 320px;
+    background: linear-gradient(45deg, #ffffff, #f0f0f0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 999;
+}
+
+/* Header of the chatbox */
+.chatbox-header {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+.chatbox-header .exit-btn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.chatbox-header .exit-btn:hover {
+    color: #ddd;
+}
+
+/* FAQ section */
+.chatbox-faq {
+    padding: 10px;
+    font-size: 14px;
+}
+.chatbox-faq div {
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+    cursor: pointer;
+}
+.chatbox-faq div:hover {
+    color: #25D366;
+}
+.chatbox-faq div + div {
+    margin-top: 5px;
+}
+
+/* Answer style */
+.chatbox-faq p {
+    display: none;
+    margin: 5px 0 0 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Send message button */
+.send-message-btn {
+    text-align: center;
+    padding: 12px;
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-top: 2px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.send-message-btn:hover {
+    background: linear-gradient(45deg, #20b55b, #0f6e5c);
+}
+.send-message-btn i {
+    font-size: 18px;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+.send-message-btn:hover i {
+    transform: translateX(5px);
+}
