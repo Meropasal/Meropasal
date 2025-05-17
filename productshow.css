@@ -72,10 +72,11 @@
   color: orange;
 }
 
-.product-price {
+.item-price {
   color: #e53935;
   font-weight: 600;
 }
+
 .price-current {
   color: #e53935;
   font-weight: 600;
