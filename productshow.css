@@ -72,9 +72,20 @@
   color: orange;
 }
 
-.item-price {
+.product-price {
   color: #e53935;
   font-weight: 600;
+}
+.price-current {
+  color: #e53935;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 13px;
 }
 
 .buy-btn {
