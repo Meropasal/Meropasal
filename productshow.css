@@ -119,6 +119,7 @@
 
     .item-rating {
       color: orange;
+      font-size: 5px;
     }
 
     .item-price {
