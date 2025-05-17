@@ -16,7 +16,7 @@
     overflow-x: auto; /* Allow horizontal scrolling */
     overflow-y: hidden; /* Prevent vertical scrolling */
     white-space: nowrap; /* Prevent wrapping of the cards */
-    padding: 10px 5;
+    padding: 10px 5px;
     scroll-behavior: smooth; /* Smooth scrolling effect */
   }
 
