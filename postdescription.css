@@ -1,0 +1,106 @@
+  /* Container grid: two columns on desktop, one column on mobile */
+  .post-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin-top: 30px;
+  }
+  @media (max-width: 768px) {
+    .post-content-wrapper {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  /* Description &amp; Similar Products box styling */
+  .post-description,
+  .post-similar {
+    background: #f9faff;
+    border: 1.5px solid #cce0ff;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 3px 8px rgba(0, 123, 255, 0.1);
+    font-family: &#39;Segoe UI&#39;, Tahoma, Geneva, Verdana, sans-serif;
+    color: #1a1a1a;
+  }
+  .post-description h2.post-line-heading,
+  .post-similar h2.post-line-heading {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #004085;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+    font-weight: 600;
+  }
+  .post-description data\:post\.body,
+  .post-similar .container {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333333;
+  }
+
+  /* Banner styles */
+  .fancy-banner {
+    border: 2px solid #007BFF;
+    background: linear-gradient(90deg, #e0f0ff, #ffffff);
+    padding: 20px;
+    font-family: &#39;Segoe UI&#39;, Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    color: #003366;
+    box-shadow: 0 3px 8px rgba(0, 123, 255, 0.15);
+    text-align: left; /* Align content to left */
+    margin-bottom: 10px;
+  }
+  .fancy-banner h3 {
+    margin-top: 0;
+    font-size: 1.6em;
+    color: #0056b3;
+  }
+  .fancy-banner .delivery-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px;
+    margin: 15px 0;
+  }
+  .fancy-banner .delivery-info &gt; div {
+    padding: 10px;
+    border-radius: 6px;
+  }
+  .fancy-banner .delivery-all-nepal {
+    background: #eef6ff;
+  }
+  .fancy-banner .free-nuwakot {
+    background: #d1e7dd;
+    font-weight: bold;
+    color: #0f5132;
+  }
+  .fancy-banner .cod-available {
+    background: #fff3cd;
+    color: #664d03;
+    font-weight: bold;
+  }
+  .fancy-banner .refund-policy {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #007BFF;
+    padding-top: 15px;
+  }
+  .fancy-banner .refund-policy img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  .fancy-banner .refund-policy .text {
+    max-width: 600px;
+  }
+  .fancy-banner .refund-policy .text h4 {
+    margin: 0 0 5px 0;
+    color: #004085;
+  }
+  .fancy-banner .refund-policy .text p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #212529;
+  }
